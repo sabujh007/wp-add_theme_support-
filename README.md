@@ -1,15 +1,15 @@
 finction the_function_name(){
-load_theme_textdomain( 'twentysixteen', get_template_directory() . '/languages' );
-
-add_theme_support( 'title-tag' );
-
-add_theme_support( 'automatic-feed-links' );
-
-add_theme_support( 'custom-logo', array(
-		'height'      => 240,
-		'width'       => 240,
-		'flex-height' => true,
-	) );
+	load_theme_textdomain( 'textdomai_name', get_template_directory() . '/languages' );
+	
+	add_theme_support( 'title-tag' );
+	
+	add_theme_support( 'automatic-feed-links' );
+	
+	add_theme_support( 'custom-logo', array(
+			'height'      => 240,
+			'width'       => 240,
+			'flex-height' => true,
+		) );
 	
 	add_theme_support( 'post-thumbnails' );
 	
@@ -29,4 +29,4 @@ add_theme_support( 'custom-logo', array(
 	
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }
-add_action('add_theme_setup', 'the_function_name');
+add_action('after_setup_theme', 'the_function_name');
