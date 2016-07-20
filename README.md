@@ -1,5 +1,5 @@
 finction the_function_name(){
-	load_theme_textdomain( 'textdomai_name', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'textdomain_name', get_template_directory() . '/languages' );
 	
 	add_theme_support( 'title-tag' );
 	
